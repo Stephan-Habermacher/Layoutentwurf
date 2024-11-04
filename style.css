@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: ;
+}
+
+h1,
+h2 {
+  color: #1e6eb4;
+}
+
+.usLuzern {
+  max-width: 25%;
+}
