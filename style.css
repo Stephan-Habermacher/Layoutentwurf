@@ -1,17 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
 body {
   background-color: #f5f5f5;
-  font-family: ;
+  font-family: "red hat text", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+}
+
+ul {
+  height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1e6eb4;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: #1e6eb4;
+  font-family: "questrial", sans-serif;
 }
 
 .usLuzern {
-  max-width: 25%;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15vh;
+  background-color: #1e6eb4;
+}
+.information,
+.followUs,
+.login {
+  display: flex;
+  flex-direction: column;
 }
