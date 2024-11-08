@@ -23,7 +23,6 @@ nav {
   text-align: center;
   height: 4rem;
   gap: 1rem;
-  font-size: 1.3rem;
   border-bottom: var(--tertiary-color) solid 5px;
 }
 
@@ -31,10 +30,13 @@ nav {
   text-decoration: none;
   color: var(--tertiary-color);
   transition: all 0.2s ease-in-out;
+  font-size: 1.3rem;
 }
 
 .nav-item:hover {
   color: var(--secondary-color);
+  border-left: #1e6eb4 solid 15px;
+  padding-left: 18px;
 }
 
 header {
@@ -52,6 +54,7 @@ header {
 
 .header-logo {
   margin-top: 20rem;
+  max-width: 600px;
 }
 
 .header-subtitle {
@@ -80,17 +83,20 @@ h3 {
 
 footer {
   display: flex;
-  height: 18vh;
-  justify-content: space-evenly;
+  height: 20vh;
+  justify-content: space-around;
   background-color: var(--tertiary-color);
 }
 
 .title {
+  margin-top: 0.6rem;
 }
 
 a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: var(--primary-color);
+  padding: 0.1rem 0;
 }
 
 .information,
@@ -100,10 +106,17 @@ a {
   flex-direction: column;
 }
 
+.followUs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .instagram,
 .facebook {
   height: 1.2rem;
   color: var(--secondary-color);
+  margin-right: 7px;
 }
 
 @media only screen and (min-width: 767px) {
