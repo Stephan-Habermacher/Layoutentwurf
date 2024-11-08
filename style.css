@@ -35,7 +35,7 @@ nav {
 
 .nav-item:hover {
   color: var(--secondary-color);
-  border-left: #1e6eb4 solid 15px;
+  border-left: var(--tertiary-color) solid 15px;
   padding-left: 18px;
 }
 
@@ -66,19 +66,34 @@ header {
   border: var(--tertiary-color) solid 4px;
 }
 
-section {
-  margin-top: 2rem;
+main {
+  margin: 1.5rem 0;
 }
 
-h3 {
-  margin: 1rem 0;
+h2 {
   color: var(--tertiary-color);
   font-family: "Questrial", sans-serif;
+  border: var(--tertiary-color) solid 4px;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  padding: 8px;
 }
 
-.usLuzern {
-  width: 85%;
-  border-radius: 10%;
+.aboutUs,
+.openingHours {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.image-container {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.openingHours {
+  margin-top: 3rem;
 }
 
 footer {
