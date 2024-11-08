@@ -8,9 +8,11 @@
   </head>
   <body>
     <nav>
-      <a href="#" class="nav-item">usLuzern</a>
-      <a href="#" class="nav-item">Produzenten</a>
-      <a href="#" class="nav-item">Zum Shop</a>
+      <div class="container nav">
+        <a href="#" class="nav-item">usLuzern</a>
+        <a href="#" class="nav-item">Produzenten</a>
+        <a href="#" class="nav-item">Zum Shop</a>
+      </div>
     </nav>
 
     <header>
@@ -23,7 +25,7 @@
     </header>
 
     <main>
-      <section class="aboutUs">
+      <section class="aboutUs container">
         <h2>Wer sind wir...</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
@@ -40,18 +42,21 @@
         </p>
         <div class="image-container">
           <img
+            class="image-item"
             src="./assets/images/20180718_161521.jpg"
             alt="usLuzern_kissen"
           /><img
+            class="image-item"
             src="./assets/images/20170624_123954.jpg"
             alt="usLuzern_tassen"
           /><img
+            class="image-item"
             src="./assets/images/20190731_110503.jpg"
             alt="usLuzern_rucksack"
           />
         </div>
       </section>
-      <section class="openingHours">
+      <section class="openingHours container">
         <h2>Öffnungszeiten</h2>
         <div class="days">
           <span class="day">MO</span>
@@ -85,41 +90,43 @@
     </main>
 
     <footer>
-      <div class="information">
-        <p class="title">Information</p>
-        <a href="#">Kontakt</a>
-        <a href="#">Standort</a>
-        <a href="#">Das usLuzern Team</a>
-        <a href="#">Newsletter</a>
-        <a href="#">AGB</a>
-        <a href="#">Datenschutzerklärung</a>
-        <a href="#">Impressum</a>
-      </div>
-
-      <div class="followUs">
-        <p class="title">Folge uns</p>
-        <div class="followUs-container">
-          <img
-            src="./assets/images/icons8-facebook.svg"
-            class="facebook"
-            alt="facebook_logo"
-          />
-          <a href="#">usLuzern auf Facebook</a>
+      <div class="container footer">
+        <div class="information">
+          <p class="title">Information</p>
+          <a href="#">Kontakt</a>
+          <a href="#">Standort</a>
+          <a href="#">Das usLuzern Team</a>
+          <a href="#">Newsletter</a>
+          <a href="#">AGB</a>
+          <a href="#">Datenschutzerklärung</a>
+          <a href="#">Impressum</a>
         </div>
-        <div class="followUs-container">
-          <img
-            src="./assets/images/icons8-instagram.svg"
-            class="instagram"
-            alt="instagram_logo"
-          />
-          <a href="#">usLuzern auf Instagram</a>
-        </div>
-      </div>
 
-      <div class="login">
-        <p class="title">Login</p>
-        <a href="#">Kunden Login</a>
-        <a href="#">Produzenten Login</a>
+        <div class="followUs">
+          <p class="title">Folge uns</p>
+          <div class="followUs-container">
+            <img
+              src="./assets/images/icons8-facebook.svg"
+              class="facebook"
+              alt="facebook_logo"
+            />
+            <a href="#">usLuzern auf Facebook</a>
+          </div>
+          <div class="followUs-container">
+            <img
+              src="./assets/images/icons8-instagram.svg"
+              class="instagram"
+              alt="instagram_logo"
+            />
+            <a href="#">usLuzern auf Instagram</a>
+          </div>
+        </div>
+
+        <div class="login">
+          <p class="title">Login</p>
+          <a href="#">Kunden Login</a>
+          <a href="#">Produzenten Login</a>
+        </div>
       </div>
     </footer>
   </body>

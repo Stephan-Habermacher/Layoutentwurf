@@ -17,20 +17,28 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
   height: 4rem;
-  gap: 1rem;
   border-bottom: var(--tertiary-color) solid 5px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .nav-item {
   text-decoration: none;
   color: var(--tertiary-color);
   transition: all 0.2s ease-in-out;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .nav-item:hover {
@@ -79,24 +87,22 @@ h2 {
   padding: 8px;
 }
 
-.aboutUs,
-.openingHours {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .image-container {
   margin-top: 0.8rem;
   display: flex;
-  justify-content: space-between;
-  height: 15vh;
+  justify-content: flex-start;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  width: 100%;
 }
 
 .openingHours {
   margin-top: 3rem;
 }
 .days {
-  width: 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -108,9 +114,15 @@ h2 {
 
 footer {
   display: flex;
-  height: 20vh;
-  justify-content: space-around;
   background-color: var(--tertiary-color);
+  padding: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -133,6 +145,7 @@ a {
 
 .followUs-container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -145,9 +158,21 @@ a {
 }
 
 @media only screen and (min-width: 767px) {
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .image-item {
+    height: 15vh;
+    width: unset;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .days {
+    width: 40%;
+  }
+  .nav-item {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
