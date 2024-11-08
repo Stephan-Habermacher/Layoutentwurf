@@ -95,6 +95,16 @@ h2 {
 .openingHours {
   margin-top: 3rem;
 }
+.days {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  justify-content: end;
+}
 
 footer {
   display: flex;
