@@ -44,7 +44,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(/assets/images/usLuzern.png);
+  background: url("./assets/images/usLuzern.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
